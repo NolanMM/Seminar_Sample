@@ -1,0 +1,12 @@
+psycopg2-binary
+onnxruntime-gpu
+finnhub-python
+python-dotenv
+scikit-learn
+onnx==1.16.1
+streamlit
+notebook
+prefect
+plotly
+polars
+numpy
