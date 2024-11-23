@@ -105,7 +105,7 @@ Before starting, ensure your environment is set up with the required tools and l
 
 <summary><b>Set Up</b></summary>
 
-- Install PyTorch using the appropriate version for your system. [Check the official PyTorch website]() for the latest installation instructions.
+- Install PyTorch using the appropriate version for your system. [Check the official PyTorch website](https://pytorch.org/get-started/locally/) for the latest installation instructions.
 
 - For example, for systems with CUDA 11.8:
     ```bash
@@ -133,7 +133,7 @@ Before starting, ensure your environment is set up with the required tools and l
 </details>
 
 ### 3. PostgreSQL 16
-- Install PostgreSQL 16. Follow the instructions for your operating system from the [Official PostgreSQL website]().
+- Install PostgreSQL 16. Follow the instructions for your operating system from the [Official PostgreSQL website](https://www.postgresql.org/download/).
 
 - Verify the installation:
     ```bash
