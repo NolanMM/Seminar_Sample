@@ -8,7 +8,7 @@
 ## II. Project Architectures
 
 <p align="center">
-    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Data_Engineering_Architecture.png?raw=true" alt="Data Engineering Architecture" height=600"/>
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Data_Engineering_Architecture.png?raw=true" alt="Data Engineering Architecture" height=400"/>
 </p>
 
 ---
