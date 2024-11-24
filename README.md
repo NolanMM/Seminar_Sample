@@ -147,14 +147,45 @@ Before starting, ensure your environment is set up with the required tools and l
 
 1. Clone the Git Repository
     ```bash
+    git clone https://github.com/NolanMM/Seminar_Sample.git
+    cd Seminar_Sample
     ```
 2. Create Python Virtual Environment
 3. Installed Dependencies that needed for the project
     ```bash
     pip install -r requirements.txt
     ```
-4. Input the Key Information into
+4. Input the Key Information into 
+    ```bash
+    .\Data_Engineering_Pipeline\keys\finhub.env
+    .\Data_Engineering_Pipeline\keys\postgresql.env
+    .\Data_Engineering_Pipeline\keys\stock_symbol_list.txt
+    ```
 
-## VI. Usage
+## VI. Usage Data Engineering Pipeline
+By default the flow will be automatically trigger to run every 2 minutes but you can change it in 
 
+```bash
+Data_Engineering_Pipeline\Data_Engineering_Pipeline.py
+```
+
+1. Run the **Perfect Server** in python virtual environment (Seperate Terminal)
+    ```bash
+    prefect server start
+    ```
+    You can access the **Perfect UI Server** with URL: **http://127.0.0.1:4200/dashboard**
+<br>
+
+2. Run the script to start the Pipeline in python virtual environment
+    ```bash
+    $env:PREFECT_API_URL="http://127.0.0.1:4200/api"; cd .\Data_Engineering_Pipeline; python .\Data_Engineering_Pipeline.py
+    ```
+    You can see the pipeline in **Perfect UI Server**
+
+<br>
+
+3. To trigger a run for this flow (Optional)
+    ```bash
+    $env:PREFECT_API_URL="http://127.0.0.1:4200/api"; prefect deployment run 'data-retrieve-pipeline-flow/data-retrieve-pipeline-flow'
+    ```
 
