@@ -7,6 +7,10 @@
 
 ## VI. Project Architectures
 
+<p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Data_Engineering_Architecture.png?raw=true" alt="Data Engineering Architecture" height=600"/>
+</p>
+
 ---
 
 ## II. Tech Stack
@@ -169,6 +173,10 @@ By default the flow will be automatically trigger to run every 2 minutes but you
 Data_Engineering_Pipeline\Data_Engineering_Pipeline.py
 ```
 
+<p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Configure_Time.png?raw=true" alt="Configure Time Diagram" height="200"/>
+</p>
+
 1. Run the **Perfect Server** in python virtual environment (Seperate Terminal)
     ```bash
     prefect server start
@@ -181,6 +189,10 @@ Data_Engineering_Pipeline\Data_Engineering_Pipeline.py
     $env:PREFECT_API_URL="http://127.0.0.1:4200/api"; cd .\Data_Engineering_Pipeline; python .\Data_Engineering_Pipeline.py
     ```
     You can see the pipeline in **Perfect UI Server**
+
+    <p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Perfect_Server.png?raw=true" alt="Perfect Server Setup" height="400"/>
+    </p>
 
 <br>
 
