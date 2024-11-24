@@ -8,7 +8,7 @@
 ## II. Project Architectures
 
 <p align="center">
-    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Deep_Learning_Engineering_Architecture.png?raw=true" alt="Deep Learning Engineering Architecture" width="1000"/>
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Engineering-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Deep_Learning_Engineering_Architecture.png?raw=true" alt="Deep Learning Engineering Architecture" width="1000"/>
 </p>
 
 ---
@@ -172,7 +172,7 @@ By default the flow will be automatically trigger to run at 11 p.m everyday but 
 ```
 
 <p align="center">
-    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Configure_Time.png?raw=true" alt="Configure Time Diagram" height="200"/>
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Engineering-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Configure_Time.png?raw=true" alt="Configure Time Diagram" height="200"/>
 </p>
 
 1. Run the **Perfect Server** in python virtual environment (Seperate Terminal)
