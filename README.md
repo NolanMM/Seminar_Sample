@@ -5,11 +5,15 @@
 
 ---
 
-## VI. Project Architectures
+## II. Project Architectures
+
+<p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Data_Engineering_Architecture.png?raw=true" alt="Data Engineering Architecture" height=400"/>
+</p>
 
 ---
 
-## II. Tech Stack
+## III. Tech Stack
 1. **Data Collection & Preprocessing**  
    - **Python Libraries:** `polars`, `requests`  
    - **APIs:** [Finhub API](https://finnhub.io/), [Financial Modeling Prep API](https://financialmodelingprep.com/)
@@ -37,7 +41,7 @@
 
 ---
 
-## III. Prerequisites
+## IV. Prerequisites
 
 Before starting, ensure your environment is set up with the required tools and libraries. Follow these steps to install and configure the necessary prerequisites:
 
@@ -105,7 +109,7 @@ Before starting, ensure your environment is set up with the required tools and l
 
 <summary><b>Set Up</b></summary>
 
-- Install PyTorch using the appropriate version for your system. [Check the official PyTorch website]() for the latest installation instructions.
+- Install PyTorch using the appropriate version for your system. [Check the official PyTorch website](https://pytorch.org/get-started/locally/) for the latest installation instructions.
 
 - For example, for systems with CUDA 11.8:
     ```bash
@@ -133,7 +137,7 @@ Before starting, ensure your environment is set up with the required tools and l
 </details>
 
 ### 3. PostgreSQL 16
-- Install PostgreSQL 16. Follow the instructions for your operating system from the [Official PostgreSQL website]().
+- Install PostgreSQL 16. Follow the instructions for your operating system from the [Official PostgreSQL website](https://www.postgresql.org/download/).
 
 - Verify the installation:
     ```bash
@@ -143,18 +147,57 @@ Before starting, ensure your environment is set up with the required tools and l
 
 ---
 
-## IV. Installation
+## V. Installation
 
 1. Clone the Git Repository
     ```bash
+    git clone https://github.com/NolanMM/Seminar_Sample.git
+    cd Seminar_Sample
     ```
 2. Create Python Virtual Environment
 3. Installed Dependencies that needed for the project
     ```bash
     pip install -r requirements.txt
     ```
-4. Input the Key Information into
+4. Input the Key Information into 
+    ```bash
+    .\Data_Engineering_Pipeline\keys\finhub.env
+    .\Data_Engineering_Pipeline\keys\postgresql.env
+    .\Data_Engineering_Pipeline\keys\stock_symbol_list.txt
+    ```
 
-## VI. Usage
+## VI. Usage Data Engineering Pipeline
+By default the flow will be automatically trigger to run every 2 minutes but you can change it in 
 
+```bash
+Data_Engineering_Pipeline\Data_Engineering_Pipeline.py
+```
+
+<p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Configure_Time.png?raw=true" alt="Configure Time Diagram" height="200"/>
+</p>
+
+1. Run the **Perfect Server** in python virtual environment (Seperate Terminal)
+    ```bash
+    prefect server start
+    ```
+    You can access the **Perfect UI Server** with URL: **http://127.0.0.1:4200/dashboard**
+<br>
+
+2. Run the script to start the Pipeline in python virtual environment
+    ```bash
+    $env:PREFECT_API_URL="http://127.0.0.1:4200/api"; cd .\Data_Engineering_Pipeline; python .\Data_Engineering_Pipeline.py
+    ```
+    You can see the pipeline in **Perfect UI Server**
+
+    <p align="center">
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Perfect_Server.png?raw=true" alt="Perfect Server Setup" height="400"/>
+    </p>
+
+<br>
+
+3. To trigger a run for this flow (Optional)
+    ```bash
+    $env:PREFECT_API_URL="http://127.0.0.1:4200/api"; prefect deployment run 'data-retrieve-pipeline-flow/data-retrieve-pipeline-flow'
+    ```
 
