@@ -8,7 +8,7 @@
 ## II. Project Architectures
 
 <p align="center">
-    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Deep_Learning_Engineering_Architecture.png?raw=true" alt="Deep Learning Engineering Architecture" width="400"/>
+    <img src="https://github.com/NolanMM/Seminar_Sample/blob/Deep-Learning-Pipeline/Documents/Deep_Learning_Engineering_Pipeline/Deep_Learning_Engineering_Architecture.png?raw=true" alt="Deep Learning Engineering Architecture" width="1000"/>
 </p>
 
 ---
