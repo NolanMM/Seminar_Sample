@@ -5,7 +5,7 @@
 
 ---
 
-## VI. Project Architectures
+## II. Project Architectures
 
 <p align="center">
     <img src="https://github.com/NolanMM/Seminar_Sample/blob/Data-Engineering-Pipeline/Documents/Data_Engineering_Pipeline/Data_Engineering_Architecture.png?raw=true" alt="Data Engineering Architecture" height=600"/>
@@ -13,7 +13,7 @@
 
 ---
 
-## II. Tech Stack
+## III. Tech Stack
 1. **Data Collection & Preprocessing**  
    - **Python Libraries:** `polars`, `requests`  
    - **APIs:** [Finhub API](https://finnhub.io/), [Financial Modeling Prep API](https://financialmodelingprep.com/)
@@ -41,7 +41,7 @@
 
 ---
 
-## III. Prerequisites
+## IV. Prerequisites
 
 Before starting, ensure your environment is set up with the required tools and libraries. Follow these steps to install and configure the necessary prerequisites:
 
@@ -147,7 +147,7 @@ Before starting, ensure your environment is set up with the required tools and l
 
 ---
 
-## IV. Installation
+## V. Installation
 
 1. Clone the Git Repository
     ```bash
